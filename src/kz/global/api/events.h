@@ -176,7 +176,7 @@ namespace KZ::API::events
 		}
 	};
 
-	struct WantPlayerRecordsForCache
+	struct WantPlayerRecords
 	{
 		u16 mapId;
 		u64 playerId;
@@ -190,7 +190,7 @@ namespace KZ::API::events
 		}
 	};
 
-	struct PlayerRecordsForCache
+	struct PlayerRecords
 	{
 		std::vector<Record> records {};
 

@@ -187,11 +187,11 @@ void KZGlobalService::OnPlayerAuthorized()
 
 	if (KZGlobalService::currentMap.has_value())
 	{
-		KZ::API::events::WantPlayerRecordsForCache data;
+		KZ::API::events::WantPlayerRecords data;
 		data.mapId = KZGlobalService::currentMap->id;
 		data.playerId = this->player->GetSteamId64();
 
-		auto callback = [player = this->player](const KZ::API::events::PlayerRecordsForCache &pbs)
+		auto callback = [player = this->player](const KZ::API::events::PlayerRecords &pbs)
 		{
 			for (const KZ::API::Record &record : pbs.records)
 			{

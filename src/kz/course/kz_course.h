@@ -137,4 +137,4 @@ namespace KZ
 
 		void RegisterCommands();
 	} // namespace course
-};    // namespace KZ
+}; // namespace KZ
